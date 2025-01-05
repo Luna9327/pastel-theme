@@ -1,0 +1,63 @@
+/* Pastel Theme: Soft Baby Colors with Heart Accents */
+/**
+ * @name PastelHearts
+ * @version 1.0.0
+ * @description: A gentle pastel-inspired theme with hearts for a lovely vibe.
+ */
+
+:root {
+    /* Color palette */
+    --text-color: #ff99cc; /* Pink for text */
+    --text-highlight-color: #d1b3ff; /* Mauve for highlighted text */
+    --button-active: #ff6699; /* Dark Pink for active buttons */
+    --button-inactive: #ffe6f2; /* Light Pink for inactive buttons */
+    --background-primary: #ffffff; /* White background */
+    --background-secondary: #ffe6f2; /* Light Pink background */
+    --background-accent: #f7e6ff; /* Light Mauve background */
+}
+
+/* Text Colors */
+.theme-dark {
+    --header-primary: var(--text-color);
+    --text-normal: var(--text-color);
+    --text-muted: var(--text-highlight-color);
+}
+
+/* Buttons */
+.theme-dark .button {
+    background-color: var(--button-inactive);
+    color: var(--text-color);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.theme-dark .button:active,
+.theme-dark .button--active {
+    background-color: var(--button-active);
+    color: #fff;
+}
+
+/* Backgrounds */
+.theme-dark {
+    --background-primary: var(--background-primary);
+    --background-secondary: var(--background-secondary);
+    --background-accent: var(--background-accent);
+}
+
+/* Inputs and Modals */
+.theme-dark input,
+.theme-dark .modal {
+    background-color: var(--background-secondary);
+    color: var(--text-color);
+    border: 1px solid var(--text-highlight-color);
+}
+
+/* Scrollbars */
+.theme-dark ::-webkit-scrollbar {
+    width: 8px;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb {
+    background-color: var(--text-highlight-color);
+    border-radius: 10px;
+}
